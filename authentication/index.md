@@ -8,7 +8,7 @@
 5. create logout function and null the user state
 6. if user is available then show authenticated app otherwise show unauthenticated app and pass props to them
 
-2nd Part:-
+## 2nd Part:-
 problem:-when user refresh the web page its automatically logout or moves on login page, we want on refresh user still on login page.
 solution:- 
 
