@@ -10,4 +10,7 @@
      <Routes><Route path="/discover" element={<NotFoundScreen/>}/>
     </Routes>
 6) add Link to BookRow component ----> <Link to={`/book/${book.id}`}/>
+7) then goes to notfoundscreen and give go to home link their (if no book found then user can easily come on home page with the help of link)
+8) then goes to book.exercise import {useParams} from "react-router-dom"
+         const {bookId}=useParams()
                                 
