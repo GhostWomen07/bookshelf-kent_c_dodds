@@ -15,7 +15,7 @@ solution:-
 1. create getUser function in which we take the token from auth(auth.getToken()) or if token is available then return user and save it on user state by calling getusers function
 2. not call the function get user and set its retrn user in user state (setUser(user))
 3. do changes in api-client.exercise.js
-4.pass props to client:-
+4. pass props to client:-
     {token, headers: customHeaders, ...customConfig} = {}
     headers: {
         Authorization: token ? `Bearer ${token}` : undefined,
