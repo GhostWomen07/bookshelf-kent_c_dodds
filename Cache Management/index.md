@@ -6,10 +6,25 @@
 ### useMutation will track the state of the mutation
 ### used for easily making mutations 
 
+### Arguments:-
+useMutation(mutationFn, {
+   mutationKey,
+   onError,
+   onMutate,
+   onSettled,
+   onSuccess,
+   retry,
+   retryDelay,
+   useErrorBoundary,
+   meta,
+ })
+
 example:- const [create]= useMutation(
             ({ bookId }) => client("list-item", { data: { bookId }, token: user.token }),
              {onSettled:()=>queryCache.invalidateQueries('list-items')}
  )
+
+https://react-query-v2.tanstack.com/reference/useQuery
 
 ## useQuery
 ### custom hook to fetch data
@@ -22,9 +37,10 @@ example:- const {data:listItems}=useQuery({
 })
 
 
-### take two argument:-
-1. query key or array 
+### take two-three argument:-
+1. query key or array  string | unknown[]
 2. function that return promise 
+3. enabled (boolen value only)
 
 ###Return:-
 1. return promise that fulfills with a query result when the query succeeds or fails.
