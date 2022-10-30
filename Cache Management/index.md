@@ -38,8 +38,15 @@ example:- const {data:listItems}=useQuery({
 
 ## How to use useMutation hook? What are it's argument?
 
+- why it is used ?
 - What does it return?
 - How to call api here?
 - How to pass data and token into client fxn ?
 - How to wireup this function onClick?
 - What does function return i.e first argument of useMutation?
+
+## how to use useQuery hook? its argument?
+- why it's used?
+- what it return?
+
+## what queryCache do?
